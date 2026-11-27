@@ -3,31 +3,64 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EDUNEX INDIA | School Management Software</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EDUNEX INDIA | Premium School ERP</title>
+<meta name="description" content="EDUNEX India Premium School Management ERP. Smart admissions, fees, attendance, examination and digital school management.">
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#17305b;background:#f5f8ff}
-header{background:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:27px;font-weight:bold;color:#155eef}
-.logo span{color:#12b8a6}
-nav a{margin:8px;color:#17305b;text-decoration:none}
-.hero{text-align:center;padding:75px 20px;background:linear-gradient(135deg,#eaf2ff,#e5faf6)}
-.hero h1{font-size:38px}
-.hero h1 span{color:#155eef}
-.hero p{font-size:18px;line-height:1.6}
-.btn{display:inline-block;background:#12a879;color:white;padding:15px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px}
-section{padding:50px 7%;text-align:center}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:white;padding:25px;border:1px solid #dbe3ef;border-radius:12px}
-.card h3{color:#155eef}
-.card p{line-height:1.5}
-.demo{background:#eaf2ff}
-footer{background:#102653;color:white;text-align:center;padding:25px}
-@media(max-width:650px){
-.cards{grid-template-columns:1fr}
-.hero h1{font-size:30px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f5f8ff;color:#172554;line-height:1.6}
+header{background:#101e40;color:white;padding:16px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:900;letter-spacing:1px}
+.logo span{color:#31d6b0}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+.hero{padding:85px 7%;background:linear-gradient(125deg,#101e40,#1558aa);color:white;text-align:center}
+.tag{color:#39e0bd;font-weight:bold;letter-spacing:2px;font-size:13px}
+.hero h1{font-size:43px;line-height:1.2;margin:18px auto;max-width:800px}
+.hero p{font-size:17px;max-width:680px;margin:0 auto 25px;color:#dce8ff}
+.btn{display:inline-block;padding:13px 23px;border-radius:8px;text-decoration:none;font-weight:bold;margin:5px}
+.green{background:#11a982;color:white}
+.white{background:white;color:#123d82}
+section{padding:60px 7%;text-align:center}
+h2{font-size:30px;color:#123b82;margin-bottom:12px}
+.sub{color:#64748b;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:25px}
+.card{background:white;padding:25px 18px;border:1px solid #e1e9f5;border-radius:14px;text-align:left;box-shadow:0 5px 18px #142d5b09}
+.card h3{color:#1556a5;margin:10px 0}
+.card p{font-size:14px;color:#64748b}
+.icon{font-size:30px}
+.stats{background:#fff;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:15px;padding:28px 7%;text-align:center}
+.stats strong{font-size:24px;color:#1264b5;display:block}
+.stats span{font-size:13px;color:#64748b}
+.dark{background:#101e40;color:white}
+.dark h2{color:white}
+.dark .sub{color:#c8d6ef}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.step{background:#20365d;padding:22px;border-radius:12px}
+.step strong{font-size:23px;color:#42dfbd}
+.pricing{background:#eaf1ff}
+.pricebox{max-width:460px;background:white;padding:32px;margin:25px auto;border-radius:18px;box-shadow:0 10px 30px #123b9115;border:1px solid #dce6f5}
+.price{font-size:43px;color:#10a77d;font-weight:900}
+.pricebox ul{list-style:none;text-align:left;margin:20px 0}
+.pricebox li{padding:7px;border-bottom:1px solid #edf0f5}
+.pricebox li:before{content:"✓ ";color:#10a77d;font-weight:bold}
+.note{font-size:12px;color:#64748b;margin-top:15px}
+form{max-width:600px;margin:25px auto;background:white;padding:25px;border-radius:15px;text-align:left;box-shadow:0 5px 25px #0000000b}
+label{display:block;font-weight:bold;font-size:13px;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #d7e0ed;border-radius:7px;font-size:15px;background:white}
+textarea{min-height:85px}
+form button{width:100%;border:0;cursor:pointer;font-size:16px;margin-top:18px}
+.contact{background:#eaf1ff}
+footer{background:#101e40;color:white;text-align:center;padding:30px 15px}
+footer p{font-size:13px;margin:7px}
+@media(max-width:600px){
+.hero{padding:65px 6%}
+.hero h1{font-size:32px}
+section{padding:45px 5%}
 header{justify-content:center}
+nav{justify-content:center;gap:12px}
+h2{font-size:25px}
 }
 </style>
 </head>
@@ -38,42 +71,171 @@ header{justify-content:center}
 <nav>
 <a href="#home">Home</a>
 <a href="#features">Features</a>
-<a href="#demo">Free Demo</a>
+<a href="#modules">Modules</a>
+<a href="#pricing">Pricing</a>
+<a href="#register">Register</a>
 </nav>
 </header>
 
 <section class="hero" id="home">
-<h1>Smart <span>School Management</span> Software</h1>
-<p>Manage Your School Smartly & Digitally</p>
-<p>One Platform. Every School. Simple Management.</p>
-<a class="btn" href="https://wa.me/917281985411?text=Hello%20EDUNEX%20INDIA%2C%20I%20want%20a%20free%20demo%20of%20School%20Management%20Software.">GET FREE DEMO</a>
+<div class="tag">PREMIUM SCHOOL ERP PLATFORM</div>
+<h1>One Platform.<br>Every School. Smarter Future.</h1>
+<p>Transform your school with smart digital management. Manage admissions, students, teachers, fees, attendance and examinations in one platform.</p>
+<a class="btn green" href="#register">Register Your School</a>
+<a class="btn white" href="#demo">Get Free Demo</a>
 </section>
 
+<div class="stats">
+<div><strong>All India</strong><span>School Network</span></div>
+<div><strong>24/7</strong><span>Online Access*</span></div>
+<div><strong>3 Portals</strong><span>Admin, Teacher & Student*</span></div>
+<div><strong>Digital</strong><span>School Management</span></div>
+</div>
+
 <section id="features">
-<h2>Our Software Features</h2>
+<h2>Why Choose EDUNEX?</h2>
+<p class="sub">A smarter way to manage your school operations</p>
 <div class="cards">
-<div class="card"><h3>🎓 Students</h3><p>Manage student records and classes.</p></div>
-<div class="card"><h3>💳 Fees</h3><p>Manage school fees and payments.</p></div>
-<div class="card"><h3>📅 Attendance</h3><p>Track daily student attendance.</p></div>
-<div class="card"><h3>📝 Exams</h3><p>Manage examinations and results.</p></div>
-<div class="card"><h3>👨‍🏫 Teachers</h3><p>Manage teachers and school staff.</p></div>
-<div class="card"><h3>📢 Notices</h3><p>Send school announcements.</p></div>
+<div class="card"><div class="icon">🎓</div><h3>Smart Administration</h3><p>Organize school records and daily operations from one dashboard.</p></div>
+<div class="card"><div class="icon">🔐</div><h3>Role Based Access</h3><p>Separate access for school administrators, teachers and students.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Digital Reports</h3><p>Keep student, fee and examination records organized.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>All India Platform</h3><p>Designed for schools across different states and districts.</p></div>
 </div>
 </section>
 
-<section class="demo" id="demo">
-<h2>Want to Manage Your School Digitally?</h2>
-<p>Contact EDUNEX INDIA and request your Free Software Demo.</p>
-<a class="btn" href="https://wa.me/917281985411?text=Hello%2C%20I%20want%20a%20free%20demo%20of%20EDUNEX%20School%20Management%20Software.">📲 WhatsApp for FREE DEMO</a>
-<p>Call / WhatsApp: 7281985411</p>
+<section class="dark" id="modules">
+<h2>Complete School ERP Modules</h2>
+<p class="sub">Everything your school needs in one place</p>
+<div class="cards">
+<div class="card"><div class="icon">📝</div><h3>Admission</h3><p>Student registration and admission records.</p></div>
+<div class="card"><div class="icon">👨‍🎓</div><h3>Student Management</h3><p>Profiles, classes and student information.</p></div>
+<div class="card"><div class="icon">💰</div><h3>Fee Management</h3><p>Fee structures, payment entries and receipts.</p></div>
+<div class="card"><div class="icon">📅</div><h3>Attendance</h3><p>Daily attendance and attendance records.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Examination</h3><p>Exams, marks and result management.</p></div>
+<div class="card"><div class="icon">📄</div><h3>Report Cards</h3><p>Student performance and report records.</p></div>
+<div class="card"><div class="icon">👩‍🏫</div><h3>Teacher Management</h3><p>Staff profiles and teacher records.</p></div>
+<div class="card"><div class="icon">📢</div><h3>Notice Board</h3><p>School announcements and notices.</p></div>
+<div class="card"><div class="icon">🪪</div><h3>School Identity</h3><p>School profile and unique EDUNEX ID.</p></div>
+</div>
+</section>
+
+<section>
+<h2>How EDUNEX Works</h2>
+<p class="sub">Simple onboarding for every school</p>
+<div class="steps">
+<div class="step"><strong>01</strong><h3>Register</h3><p>Submit your school details.</p></div>
+<div class="step"><strong>02</strong><h3>Verification</h3><p>Our team reviews your enquiry.</p></div>
+<div class="step"><strong>03</strong><h3>Free Demo</h3><p>Explore the software before purchase.</p></div>
+<div class="step"><strong>04</strong><h3>Activation</h3><p>License and account activation after payment and approval.</p></div>
+</div>
+</section>
+
+<section class="pricing" id="pricing">
+<h2>Simple Lifetime Pricing</h2>
+<p class="sub">Special introductory offer for schools</p>
+<div class="pricebox">
+<div class="tag">LAUNCH OFFER</div>
+<h3>EDUNEX Lifetime License</h3>
+<div class="price">₹1,999</div>
+<p>One-time license fee per school</p>
+<ul>
+<li>School Management Dashboard</li>
+<li>Student & Admission Records</li>
+<li>Fees Management</li>
+<li>Attendance Management</li>
+<li>Examination & Results</li>
+<li>Teacher Management</li>
+<li>Basic Software Updates</li>
+<li>Free Demo Before Purchase</li>
+</ul>
+<a class="btn green" href="#register">Enquire Now</a>
+<p class="note">Final license scope and supported modules will be specified in the agreement. Hosting, domain, SMS, WhatsApp API, maintenance and third-party services may be charged separately.</p>
+</div>
+</section>
+
+<section id="demo">
+<h2>Book Your Free Demo</h2>
+<p class="sub">See how EDUNEX can simplify your school management.</p>
+<a class="btn green" href="https://wa.me/917281985411?text=Hello%20EDUNEX%2C%20I%20want%20a%20free%20software%20demo.">Request Free Demo on WhatsApp</a>
+</section>
+
+<section class="contact" id="register">
+<h2>Register Your School</h2>
+<p class="sub">Submit your details. Our team will contact you.</p>
+<form id="schoolForm">
+<label>School Name *</label>
+<input id="school" required placeholder="Enter school name">
+<label>Principal / Owner Name *</label>
+<input id="principal" required placeholder="Enter full name">
+<label>Mobile Number *</label>
+<input id="mobile" type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="10 digit mobile number">
+<label>Email Address</label>
+<input id="email" type="email" placeholder="School email">
+<label>School Type *</label>
+<select id="type" required>
+<option value="">Select school type</option>
+<option>Private School</option>
+<option>Public School</option>
+<option>Other</option>
+</select>
+<label>Board</label>
+<select id="board">
+<option value="">Select board</option>
+<option>State Board</option>
+<option>CBSE</option>
+<option>ICSE</option>
+<option>Other</option>
+</select>
+<label>State *</label>
+<input id="state" required placeholder="Enter state">
+<label>District *</label>
+<input id="district" required placeholder="Enter district">
+<label>Classes</label>
+<input id="classes" placeholder="Example: Nursery to Class 10">
+<label>Approximate Student Strength</label>
+<select id="students">
+<option value="">Select students</option>
+<option>Below 100</option>
+<option>100–300</option>
+<option>301–500</option>
+<option>501–1000</option>
+<option>Above 1000</option>
+</select>
+<button class="btn green" type="submit">Submit School Enquiry on WhatsApp</button>
+<p class="note">By submitting, you agree to share these details with EDUNEX for contacting you about the software. This form sends your enquiry to WhatsApp; it does not create an account or store data in a database.</p>
+</form>
 </section>
 
 <footer>
-<h3>EDUNEX INDIA</h3>
-<p>Smart Learning. Smart School Management.</p>
-<p>Contact: 7281985411</p>
+<h2 style="color:white">EDUNEX INDIA</h2>
+<p>Premium School Management Software</p>
+<p>Smart School. Smarter Future.</p>
+<p>WhatsApp: 7281985411</p>
 <p>© 2026 EDUNEX INDIA. All Rights Reserved.</p>
 </footer>
 
+<script>
+document.getElementById("schoolForm").addEventListener("submit",function(e){
+e.preventDefault();
+const fields=[
+["School Name","school"],
+["Principal Name","principal"],
+["Mobile","mobile"],
+["Email","email"],
+["School Type","type"],
+["Board","board"],
+["State","state"],
+["District","district"],
+["Classes","classes"],
+["Student Strength","students"]
+];
+let message="EDUNEX INDIA - New School Enquiry\n\n";
+fields.forEach(function(item){
+message+=item[0]+": "+document.getElementById(item[1]).value+"\n";
+});
+message+="\nPlease contact me for an EDUNEX Free Demo.";
+window.open("https://wa.me/917281985411?text="+encodeURIComponent(message),"_blank");
+});
+</script>
 </body>
 </html>
